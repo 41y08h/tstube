@@ -4,6 +4,7 @@ import axios from "axios";
 import { AuthProvider } from "../contexts/Auth";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
+import "../styles/globals.css";
 
 const queryClient = new QueryClient({
   defaultOptions: {
