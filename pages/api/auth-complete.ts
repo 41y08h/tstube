@@ -12,7 +12,7 @@ const authComplete: NextApiHandler = (req, res) => {
       maxAge: 60 * 1000 * 60 * 24 * 30,
       sameSite: "strict",
     });
-    res.setHeader("Cookie", authCookie);
+    res.setHeader("set-cookie", authCookie);
   }
 
   res.redirect("/");
