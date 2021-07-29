@@ -1,3 +1,5 @@
+import { IChannel } from "./IUser";
+
 export default interface IVideo {
   id: number;
   title: string;
@@ -7,4 +9,8 @@ export default interface IVideo {
   duration: number;
   userId: number;
   createdAt: Date;
+}
+
+export interface IVideoWithChannel extends IVideo {
+  channel: IChannel;
 }
