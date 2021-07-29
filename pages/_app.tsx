@@ -5,6 +5,7 @@ import { AuthProvider } from "../contexts/Auth";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "../styles/globals.css";
+import Header from "../components/Header";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,6 +29,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
+        <Header />
         <Component {...pageProps} />
       </AuthProvider>
       <ReactQueryDevtools initialIsOpen={false} />

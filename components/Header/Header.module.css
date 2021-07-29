@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.headerList {
+  display: flex;
+}
+
+.headerList li {
+  padding: 4px 18px;
+}
