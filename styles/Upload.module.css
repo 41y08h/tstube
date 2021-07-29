@@ -1,0 +1,60 @@
+.container {
+  padding: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.form {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.form fieldset {
+  padding: 20px;
+}
+
+.form button[type="submit"] {
+  padding: 4px;
+}
+
+.formInner {
+  display: flex;
+}
+
+.formInner video {
+  margin-right: 20px;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .formInner {
+    flex-direction: column;
+  }
+  .formInner video {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.formTop {
+  display: flex;
+}
+
+.formTop input {
+  width: 100%;
+}
+
+.title {
+  padding: 4px;
+}
+
+.descriptionContainer {
+  margin-top: 20px;
+}
+
+.description {
+  padding: 8px;
+  height: 200px;
+  width: 100%;
+}
