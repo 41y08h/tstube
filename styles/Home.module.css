@@ -1,3 +1,4 @@
 .videoCard img {
   max-width: 400px;
+  display: flex;
 }
