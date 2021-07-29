@@ -30,7 +30,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <Header />
-        <Component {...pageProps} />
+        <div className="container">
+          <Component {...pageProps} />
+        </div>
       </AuthProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
